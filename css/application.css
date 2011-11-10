@@ -1,0 +1,44 @@
+body {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+body div.content {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div,header h1.underlined {
+  text-decoration: underlined;
+}
+
+div.header h1.underlined a {
+  color: black;
+}
+
+div,header h1.underlined a:visited {
+  color: black;
+}
+
+div.header h1.underlined a:active {
+  color: black;
+}
+
+div.header h1.underlined a:hover {
+  color: darkBlue;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer_border {
+  border-top: 1px solid lightGrey;
+  margin: 1.5em 0.5em 0;
+}
+
+.footer_links {
+  font-size: 0.75em;
+  padding-top: 0.5em;
+}
