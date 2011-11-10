@@ -1,0 +1,32 @@
+/* CSS that will only be applied when viewed on a screen or projector */
+
+ul.bullet li {
+  background-image: -moz-linear-gradient(center top, lightBlue 0%, darkBlue 100%);
+  border-radius: 5px 5px 5px 5px;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ul.bullet li:hover {
+  background-image: -moz-linear-gradient(center top, lightBlue 0%, lightBlue 10%, darkBlue 100%);
+}
+
+ul.bullet {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: center;
+  -moz-box-pack: justify;
+}
+
+ul.bullet a {
+  color: white;
+  text-decoration: none;
+}
