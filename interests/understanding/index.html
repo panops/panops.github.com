@@ -2,3 +2,69 @@
 layout: default
 title: Understanding the Rationale and Internals of the PanOps platform
 ---
+<ol id="table_of_contents">
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#purpose_and_rationale">Purpose and Rationale</a></li>
+<li><a href="#what_is_panops">What is PanOps?</a></li>
+<li><a href="#implementation">Implementation</a></li>
+<li><a href="#summary">Summary</a></li>
+</ol>
+
+<p id="intro">
+PanOps is currently undergoing heavy development and the claims represented below represent a manifesto for the direction of the PanOps platform. 
+PanOps's current capabilities are located in the <em>CAPABILITIES</em> file at the root of each PanOps platform release. 
+If you just want to know the recommended ways to interact with PanOps, go ahead and skip down to the summary.
+</p>
+
+<h2 id="purpose_and_rationale">Purpose and Rationale</h2>
+
+  <p>
+  The PanOps Platform was created to standardize distrubted systems resource management in order to implement instances of distributed applications. Prior to
+  the creation of PanOps individuals or groups that wished to manage diverse sets of resources, both local or utility based, either had to invent ad-hoc systems
+  built in house, or couple themselves to proprietary utility computing management platforms like Heroku, or Amazon's CloudFormation system. PanOps provides a 
+  freely available, consistently interfaced, and well integrated alternative to either in-house development or proprietary lock-in, as well as access to a rich 
+  toolset and a well tested, ready-built system.
+  </p>
+
+<h2 id="what_is_panops">What is PanOps?</h2>
+
+  <p>
+    The PanOps Platform is a <em>reliable</em>, <em>operable</em>, <em>distributed</em>, <em>self-organizing</em>,
+    <em>resource management</em> <em>platform</em> for <em>distributed applications</em>.
+  </p>
+  
+  <h3 id="purpose_and_rationale_reliable">Reliable</h3>
+    <p>
+      Reliability is the first guarantee of the PanOps platform. In relationship to the PanOps platform, reliability is best described as determinism. That is, when given a 
+      known state of managed resources and information about that knowledge, and a transformation from that state to another given state PanOps components should always 
+      converge on an identical resultant state. This component behavior provides predictability in operations, eases testing, and codifies expections for developer operators.
+    </p>
+  <h3 id="purpose_and_rationale_operable">Operable</h3>
+    <p>
+      Operability refers to the ability of a system to keep its operators informed of its state and the information about that state in the past, present, and when known, future 
+      and to hold that state constant given changes in the state or availability of surrounding resources.
+    </p>
+    <p>
+      PanOps handles failure as a first class citizen. In any distributed system, failure is inevitable. PanOps handles failures in underlying resources by continuously monitoring
+      and reacting to resource state changes, automatically reconverging the system to its goal state without human interaction. Only if PanOps is or may be unable to successfully 
+      automatically reconverge the system to the specified goal state is corrective action required.
+    </p>
+    <p>
+      PanOps components chronicle all actions, decisions, and considerations and their reasons in a standard format using a standard interface for retrieval so
+      that if human intervention into system operation is required to debug a problem or correct an issue context may be quickly gathered and effective corrective action may be taken.
+    </p>
+  <h3 id="purpose_and_rationale_distributed">Distributed</h3>
+  <h3 id="purpose_and_rationale_self-organizing">Self-Organizing</h3>
+  <h3 id="purpose_and_rationale_resource_management">Resource Management</h3>
+  <h3 id="purpose_and_rationale_platform">Platform</h3>
+  <h3 id="purpose_and_rationale_distributed_applications>Distributed Applications</h3>
+
+<h2 id="implementation">Implementation</h2>
+
+  <h3 id="implementation_services">Services</h3>
+  
+    <h4 id="implementation_services_service_discovery">Service Registration and Discovery</h4>
+
+    <h4 id="implementation_services_identity">Identity and Authorization</h4>
+
+<h2 id="summary">Summary</h2>
