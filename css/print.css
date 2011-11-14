@@ -1,3 +1,7 @@
+a:link:after, a:visited:after {
+  content:" (" attr(href) ") ";
+}
+
 div.github_tag {
   display: none;
 }

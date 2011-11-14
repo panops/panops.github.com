@@ -30,3 +30,22 @@ ul.bullet a {
   color: white;
   text-decoration: none;
 }
+
+div.top_level.section {
+  margin-left: 0;
+}
+
+div.section {
+  margin-left: 2em;
+}
+
+div.section p {
+  margin-left: 2em;
+}
+
+div.section h2 {
+  margin-left: 0;
+}
+div.section p {
+  margin-left: 2em;
+}
