@@ -21,7 +21,7 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
 <div class="top_level section" id="purpose_and_rationale">
 <h2>Purpose and Rationale</h2>
   <p>
-  The PanOps Platform was created to standardize distrubted systems resource management in order to implement instances of distributed applications. Prior to
+  The PanOps Platform was created to standardize distributed systems resource management in order to implement instances of distributed applications. Prior to
   the creation of PanOps individuals or groups that wished to manage diverse sets of resources, both local or utility based, either had to invent ad-hoc systems
   built in house, or couple themselves to proprietary utility computing management platforms like Heroku, or Amazon's CloudFormation system. PanOps provides a 
   freely available, consistently interfaced, and well integrated alternative to either massive in-house development or proprietary lock-in, as well as access to a rich 
@@ -42,7 +42,7 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
     <p>
       Reliability is the first guarantee of the PanOps platform. In relationship to the PanOps platform, reliability is best described as determinism. That is, when given a 
       known state of managed resources and information about that knowledge, and a transformation from that state to another given state PanOps components should always 
-      converge on an identical resultant state. This component behavior provides predictability in operations, eases testing, and codifies expections for developer operators.
+      converge on an identical resultant state. This component behavior provides predictability in operations, eases testing, and codifies expectations for developer operators.
     </p>
   </div>
   
@@ -59,7 +59,7 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
     </p>
     <p>
       A part of operability is understanding that complete system failure in the face of calamity is always a possibility. PanOps platform services will make every effort to ensure
-      a clean shutdown or degredation of affected services and a quick return to fully functional operation when a large enough number of resources have been restored to support the
+      a clean shutdown or degradation of affected services and a quick return to fully functional operation when a large enough number of resources have been restored to support the
       applications workload.
     </p>
     <p>
@@ -88,13 +88,13 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
       PanOps services understand that the world in which components exist may be byzantine. Therefore, messages sent between components are signed, and if applicable, encrypted.
     </p>
     <p>
-      To implement this requirement, all services verify the signature and identity of the sender of incomming messages and verify the authorization of the sender to perform the requested 
+      To implement this requirement, all services verify the signature and identity of the sender of incoming messages and verify the authorization of the sender to perform the requested 
       operation or communication.
     </p>
     <p>
       In addition, Resources are segmented into trusted and untrusted spheres. This feature enables automatic unencrypted low-overhead communication between distributed components/resources where the 
       communications medium over which the communication shall pass is under the complete control of a Developer Operator trusted entity while still allowing the PanOps system to maintain security 
-      guarantees when additional untrusted resources (for example, a utility compuing account) are added to the PanOps operating theater. Another example of an application this feature enables would be
+      guarantees when additional untrusted resources (for example, a utility computing account) are added to the PanOps operating theater. Another example of an application this feature enables would be
       the secure storage of PanOps system private keys and certificates, such that PanOps is free to move this private information within the trusted sphere to ensure reliability while not exposing it 
       to untrusted networks or storage media.
     </p>
