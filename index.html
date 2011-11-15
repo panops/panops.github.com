@@ -4,20 +4,53 @@ title: PanOps Platform
 ---
 
 <p id="intro">
-PanOps <strong>:=</strong> a reliable, operable, distributed, secure, self-organizing resource management and integration platform for distributed applications.
+A <a href="/interests/understanding#reliable">reliable</a>, <a href="/interests/understanding#operable">operable</a>, <a href="/interests/understanding#distributed">distributed</a>, <a href="/interests/understanding#secure">secure</a>, <a href="/interests/understanding#self-organizing">self-organizing</a> <a href="/interests/understanding#resource_management">resource management</a> <a href="/interests/understanding#platform">platform</a> for <a href="/interests/understanding#distributed_applications">distributed applications</a>.
 </p>
 
-<h2>Quick Links</h2>
-<ul>
-  <li><a title="Troubleshooting Information" href="/interests/troubleshooting/">Troubleshooting</a></li>
-  <li><a title="PanOps Internals and Rationale" href="/interests/understanding/">Understanding PanOps</a></li>
-  <li><a title="How I can contribute to PanOps"  href="/interests/contributing/">Contributing to PanOps</a></li>
-  <li><a title="Generated Documentation" href="http://rubydoc.info/gems/panops/file/README.rdoc">Documentation</a></li>
-</ul>
+<div class="top_level section" id="quick_links">
+  <h2>Quick Links</h2>
+  <ul>
+    <li><a title="Troubleshooting Information" href="/interests/troubleshooting/">Troubleshooting</a></li>
+    <li><a title="PanOps Internals and Rationale" href="/interests/understanding/">Understanding PanOps</a></li>
+    <li><a title="How I can contribute to PanOps"  href="/interests/contributing/">Contributing to PanOps</a></li>
+    <li><a title="Generated Documentation" href="http://rubydoc.info/gems/panops/file/README.rdoc">Documentation</a></li>
+    <li><a title="Lexicon" href="/lexicon/">Lexicon</a></li>
+  </ul>
+</div>
 
+<div class="top_level section" id="getting_started">
 <h2>Getting Started</h2>
+  <p>
+  The PanOps Platform is <strong>not GA</strong>. To install the latest <em>prerelease alpha</em> version of PanOps:
+  </p>
+  <div class="section">
+  {% highlight bash %}
+  $> # to install panops and dependencies on Ruby 1.9.3-p0, you are using rvm (http://beginrescueend.com) right?
+  $> rvm --create use 1.9.3@panops
+  $> gem install --pre panops
+  Fetching: panops-0.0.1alpha.gem (100%)
+  Successfully installed panops-0.0.1alpha
+  1 gem installed
+  $> # to see what we can actually do in this release:
+  $> panops capabilities
+  ...
+  $> # to learn how to use PanOps
+  $> panops tutorial
+  ...
+  {% endhighlight %}
+  </div>
+</div>
 
-<h2>Projects extracted from PanOps</h2>
-<ul>
-  <li><a href="https://github.com/3Crowd/emeb">EMEB - An EventBus for EventMachine</a></li>
-</ul>
+<div class="top_level section" id="projects_using_panops">
+  <h2>Projects using PanOps</h2>
+  <ul>
+    <li><a href="http://www.opapp-framework.org">OpApp Framework</a> - a curated set of technologies and a workflow for developing, maintaining, and operating distributed applications.</li>
+  </ul>
+</div>
+
+<div class="top_level section" id="projects_extracted_from_panops">
+  <h2>Projects extracted from PanOps</h2>
+  <ul>
+    <li><a href="https://github.com/3Crowd/emeb">EMEB</a> - An EventBus for EventMachine</li>
+  </ul>
+</div>
