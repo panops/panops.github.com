@@ -21,11 +21,13 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
 <div class="top_level section" id="purpose_and_rationale">
 <h2>Purpose and Rationale</h2>
   <p>
-  The PanOps Platform was created to standardize distributed systems resource management in order to implement instances of distributed applications. Prior to
-  the creation of PanOps individuals or groups that wished to manage diverse sets of resources, both local or utility based, either had to invent ad-hoc systems
+  The PanOps Platform is envisioned to standardize distributed systems resource management in order to implement instances of distributed applications.
+  </p>
+  <p>
+  Prior to the creation of PanOps individuals or groups that wished to manage diverse sets of resources, both local or utility based, either had to invent ad-hoc systems
   built in house, or couple themselves to proprietary utility computing management platforms like Heroku, or Amazon's CloudFormation system. PanOps provides a 
   freely available, consistently interfaced, and well integrated alternative to either massive in-house development or proprietary lock-in, as well as access to a rich 
-  toolset and a well tested, ready-built system.
+  toolset and a well-tested, ready-built customizable systems management solution.
   </p>
 </div>
 
@@ -93,7 +95,7 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
     </p>
     <p>
       In addition, Resources are segmented into trusted and untrusted spheres. This feature enables automatic unencrypted low-overhead communication between distributed components/resources where the 
-      communications medium over which the communication shall pass is under the complete control of a Developer Operator trusted entity while still allowing the PanOps system to maintain security 
+      communications medium over which the communication shall pass is under the complete control of a <a href="/lexicon#Developer_Operator">Developer Operator</a> trusted entity while still allowing the PanOps system to maintain security 
       guarantees when additional untrusted resources (for example, a utility computing account) are added to the PanOps operating theater. Another example of an application this feature enables would be
       the secure storage of PanOps system private keys and certificates, such that PanOps is free to move this private information within the trusted sphere to ensure reliability while not exposing it 
       to untrusted networks or storage media.
@@ -102,8 +104,6 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
   
   <div class="section" id="self-organizing">
   <h3>Self-Organizing</h3>
-    <p>
-    </p>
   </div>
   
   <div class="section" id="resource_management">
@@ -121,17 +121,26 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
 
 <div class="top_level section" id="implementation">
 <h2>Implementation</h2>
-
-  <h3 id="implementation_services">Services</h3>
+  <p>
+  What follows is a 50,000 foot overview of the PanOps Platform solution, in terms of systems operating theater components.
+  </p>
   
-    <h4 id="implementation_services_service_discovery">Service Registration and Discovery</h4>
+  <div class="section" id="services">
+  <h3>Services</h3>
 
-    <h4 id="implementation_services_identity">Identity and Authorization</h4>
+    <div class="section" id="service_registration_and_discovery">
+    <h4>Service Registration and Discovery</h4>
+
+    </div>
+
+    <div class="section" id="identity_and_authorization">
+    <h4>Identity and Authorization</h4>
+
+    </div>
+    
+  </div>
 </div>
 
 <div class="top_level section" id="summary">
 <h2>Summary</h2>
-  <p>
-    There are many ways in which Developer Operators 
-  </p>
 </div>
