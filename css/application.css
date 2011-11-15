@@ -42,3 +42,26 @@ div.header h1.underlined a:hover {
   font-size: 0.75em;
   padding-top: 0.5em;
 }
+
+div.attribution_notice {
+  text-align: center;
+  font-size: 0.75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.note {
+  background: url("/images/tab_note.gif") no-repeat scroll left top #FFF9D8;
+  border: medium none;
+  margin-left: 0;
+  margin-top: 0.25em;
+  padding: 1.25em 1.25em 1.25em 48px;
+}
+
+p.warning {
+  background: url("/images/tab_warning.gif") no-repeat scroll left top #F9D9D8;
+  border: medium none;
+  margin-left: 0;
+  margin-top: 0.25em;
+  padding: 1.25em 1.25em 1.25em 48px;
+}
