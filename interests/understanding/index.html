@@ -104,18 +104,58 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
   
   <div class="section" id="self-organizing">
   <h3>Self-Organizing</h3>
+    <p>
+      As available computing resources may change at any moment, PanOps must be responsible for determining which compute resources are responsible for the task of managing resources, storing persistent data, as well as other
+      tasks required for administering and ensuring the continuity and managability of the PanOps platform instance.
+    </p>
+    <p>
+      Because of these requirements, PanOps assimilates available computing resources and makes them available for servicing both application load as well as managing the platform, depending on need and security
+      restrictions.
+    </p>
   </div>
   
   <div class="section" id="resource_management">
   <h3>Resource Management</h3>
+    <p>
+      Resources are the central abstraction in PanOps. Just as in Unix, where everything is a file, in PanOps everything is a resource. Everything is a resource -- data centers are a resource, physical components like hard drives, processors, 
+      motherboards, system units are all resources, up to an including without limitation applications and their files and interdependencies.
+    </p>
+    <p>
+      PanOps provides APIs to manipulate and manage the lifecycle of all of these resources. Intelligent agents included with PanOps perform common functions to remove the burden of regular tasks such as, but not limited to,
+      adding new resources into the system, recovering from resource failure, or dealing with new application deployments, dependencies, and requirements. PanOps also supports and recommends the creation and sharing of new intelligent
+      agents to remove the burden of regular but potentially specialized or application specific tasks such as performing automatic regular maintenance on site hardware, or adjusting the cooling requirements for a group of servers depending
+      on application load.
+    </p>
   </div>
   
   <div class="section" id="platform">
   <h3>Platform</h3>
+    <p>
+      PanOps, in providing resource management and intelligent agent functionality, is attempting to create a stable, operable, responsive environment for itself, your applications, and their dependencies.
+    </p>
+    <p>
+      As a PanOps system developer, PanOps is developed within itself, meaning that it is self-hosting. PanOps system developers must use the same toolchain and APIs as client application developers for developing system
+      services. This ensures that client application developers receive a highly polished, well maintained and well used client application sdk as it must exist for PanOps to exist.
+    </p>
+    <p>
+      As a client application developer, PanOps provides a stable, consistent, well-documented services APIs and enables rapid application prototyping and roll-out with built in continuous
+      integration resource management support.
+    </p>
+    <p>
+      As a user of client applications hosted on a PanOps platform, no aspect of application access or usage need be modified unless the client application developer wishes it so.
+    </p>
   </div>
   
   <div class="section" id="distributed_applications">
   <h3>Distributed Applications</h3>
+    <p>
+      PanOps provides support for distributed client applications, that is, applications with multiple components, requiring dependency and connection management. Note that this is not distributed in the typical sense, but 
+      distributed in the sense that the application can have many components running on separate compute resources in order to provide a single service.
+    </p>
+    <p>
+      Some examples of distributed applications, in the PanOps sense, are: web applications (with components such as front-ends, load balancers, and database dependencies), distributed database services such as HBase (which depends
+      on the Hadoop system to provide data storage) or CouchDB (which uses management layers like BigCouch to provide a single query endpoint), and content streaming and distribution systems (transcoders, storage, and large bandwidth management).
+    </p>
   </div>
 </div>
 
@@ -124,6 +164,11 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
   <p>
   What follows is a 50,000 foot overview of the PanOps Platform solution, in terms of systems operating theater components.
   </p>
+  
+  <div class="section" id="architecture">
+  <h3>Architecture</h3>
+  
+  </div>
   
   <div class="section" id="services">
   <h3>Services</h3>
