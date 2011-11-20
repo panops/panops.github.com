@@ -109,13 +109,23 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
       tasks required for administering and ensuring the continuity and managability of the PanOps platform instance.
     </p>
     <p>
-      Because of these requirements PanOps assimilates available computing resources and makes them available for servicing both application load as well as managing the platform, depending on need and security
+      Because of these requirements, PanOps assimilates available computing resources and makes them available for servicing both application load as well as managing the platform, depending on need and security
       restrictions.
     </p>
   </div>
   
   <div class="section" id="resource_management">
   <h3>Resource Management</h3>
+    <p>
+      Resources are the central abstraction in PanOps. Just as in Unix, where everything is a file, in PanOps everything is a resource. Everything is a resource -- data centers are a resource, physical components like hard drives, processors, 
+      motherboards, system units are all resources, up to an including without limitation applications and their files and interdependencies.
+    </p>
+    <p>
+      PanOps provides APIs to manipulate and manage the lifecycle of all of these resources. Intelligent agents included with PanOps perform common functions to remove the burden of regular tasks such as, but not limited to,
+      adding new resources into the system, recovering from resource failure, or dealing with new application deployments, dependencies, and requirements. PanOps also supports and recommends the creation and sharing of new intelligent
+      agents to remove the burden of regular but potentially specialized or application specific tasks such as performing automatic regular maintenance on site hardware, or adjusting the cooling requirements for a group of servers depending
+      on application load.
+    </p>
   </div>
   
   <div class="section" id="platform">
