@@ -130,10 +130,32 @@ If you just want to know the recommended ways to interact with PanOps, go ahead 
   
   <div class="section" id="platform">
   <h3>Platform</h3>
+    <p>
+      PanOps, in providing resource management and intelligent agent functionality, is attempting to create a stable, operable, responsive environment for itself, your applications, and their dependencies.
+    </p>
+    <p>
+      As a PanOps system developer, PanOps is developed within itself, meaning that it is self-hosting. PanOps system developers must use the same toolchain and APIs as client application developers for developing system
+      services. This ensures that client application developers receive a highly polished, well maintained and well used client application sdk as it must exist for PanOps to exist.
+    </p>
+    <p>
+      As a client application developer, PanOps provides a stable, consistent, well-documented services APIs and enables rapid application prototyping and roll-out with built in continuous
+      integration resource management support.
+    </p>
+    <p>
+      As a user of client applications hosted on a PanOps platform, no aspect of application access or usage need be modified unless the client application developer wishes it so.
+    </p>
   </div>
   
   <div class="section" id="distributed_applications">
   <h3>Distributed Applications</h3>
+    <p>
+      PanOps provides support for distributed client applications, that is, applications with multiple components, requiring dependency and connection management. Note that this is not distributed in the typical sense, but 
+      distributed in the sense that the application can have many components running on separate compute resources in order to provide a single service.
+    </p>
+    <p>
+      Some examples of distributed applications, in the PanOps sense, are: web applications (with components such as front-ends, load balancers, and database dependencies), distributed database services such as HBase (which depends
+      on the Hadoop system to provide data storage) or CouchDB (which uses management layers like BigCouch to provide a single query endpoint), and content streaming and distribution systems (transcoders, storage, and large bandwidth management).
+    </p>
   </div>
 </div>
 
